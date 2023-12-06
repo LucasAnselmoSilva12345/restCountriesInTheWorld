@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest --watchAll",
-    "test:header": "jest /src/tests/Header.spec.tsx --watchAll"
+    "test:header": "jest /src/tests/Header.spec.tsx --watchAll",
+    "test:router": "jest /src/tests/Routes.spec.tsx --watchAll"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
