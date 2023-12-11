@@ -26,6 +26,7 @@ export function Search({ countries }: SearchProps) {
         onChange={handleSearch}
       />
       <Card countries={filteredCountries} />
+      <div className="w-full h-[1px] mt-4 bg-primary opacity-70" />
     </>
   );
 }

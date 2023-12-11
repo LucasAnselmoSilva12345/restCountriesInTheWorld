@@ -6,7 +6,7 @@ export function RoutesApp() {
   return (
     <BrowserRouter>
       <Header />
-      <main>
+      <main className="bg-background dark:bg-neutral-900">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
