@@ -1,6 +1,4 @@
-import countriesData from '../../lib/data.json';
-
-interface CountriesCard {
+export interface CountriesCard {
   flags: {
     svg: string;
   };
@@ -10,8 +8,11 @@ interface CountriesCard {
   capital?: string;
 }
 
-export function Card() {
-  const countries: CountriesCard[] = countriesData;
+interface CardProps {
+  countries: CountriesCard[];
+}
+
+export function Card({ countries }: CardProps) {
   return (
     <div>
       {countries.map((country, index) => (

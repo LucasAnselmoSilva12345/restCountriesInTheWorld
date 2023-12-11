@@ -4,7 +4,7 @@ import countriesData from '../../lib/data.json';
 
 describe('Countries Card Component', () => {
   beforeEach(() => {
-    render(<Card />);
+    render(<Card countries={countriesData} />);
   });
 
   it('should render countries card with unique informations from JSON file', async () => {
