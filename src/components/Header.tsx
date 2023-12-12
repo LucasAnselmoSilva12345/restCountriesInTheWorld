@@ -8,7 +8,12 @@ export function Header() {
         <nav>
           <ul>
             <li>
-              <Link to="/filter-by-region">Filter by Region</Link>
+              <Link
+                to="/filter-by-region"
+                className="text-primary underline text-sm transition-all hover:opacity-75"
+              >
+                Filter by Region
+              </Link>
             </li>
           </ul>
         </nav>
