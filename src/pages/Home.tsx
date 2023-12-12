@@ -1,13 +1,13 @@
 import dataCountriesJSON from '../lib/data.json';
-import { Card } from '../components/Countries/Card';
-import { Search } from '@/components/Search';
+import { Search } from '../components/Search';
+import { FilterCountriesByRegion } from '../components/FilterCountriesByRegion';
 
 export function Home() {
   const countries = dataCountriesJSON;
   return (
     <section className="p-6 lg:px-16">
+      <FilterCountriesByRegion countries={countries} />
       <Search countries={countries} />
-      <Card countries={countries} />
     </section>
   );
 }
