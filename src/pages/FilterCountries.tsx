@@ -1,4 +1,4 @@
-import { FilterCountriesByRegion } from '@/components/FilterCountriesByRegion';
+import { FilterCountriesByRegion } from '../components/FilterCountriesByRegion';
 import dataCountriesJSON from '../lib/data.json';
 
 export function FilterCountries() {
