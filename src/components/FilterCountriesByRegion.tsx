@@ -29,11 +29,10 @@ export function FilterCountriesByRegion({
         <option value="Oceania">Oceania</option>
       </select>
 
-      {selectedRegion && (
-        <div>
-          <h3>Countries in {selectedRegion}</h3>
-          <Card countries={filteredCountries} />
-        </div>
+      {selectedRegion ? (
+        <Card countries={filteredCountries} />
+      ) : (
+        <p>No region searched</p>
       )}
     </div>
   );
