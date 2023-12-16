@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Card, CountriesCard } from './Countries/Card';
+import { RegionSelect } from './RegionSelect';
 
 interface FilterCountriesByRegionProps {
   countries: CountriesCard[];
@@ -20,19 +21,19 @@ export function FilterCountriesByRegion({
 
   return (
     <div>
-      <select id="regionSelect" onChange={handleRegionChange}>
-        <option value="">Select Region</option>
-        <option value="Africa">Africa</option>
-        <option value="Americas">Americas</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europe</option>
-        <option value="Oceania">Oceania</option>
-      </select>
+      <RegionSelect
+        selectedRegion={selectedRegion}
+        handleRegionChange={handleRegionChange}
+      />
 
       {selectedRegion ? (
-        <Card countries={filteredCountries} />
+        <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <Card countries={filteredCountries} />
+        </div>
       ) : (
-        <p>No region searched</p>
+        <p className="text-destructive dark:text-red-700 text-center font-medium opacity-80 mt-4">
+          No region searched
+        </p>
       )}
     </div>
   );

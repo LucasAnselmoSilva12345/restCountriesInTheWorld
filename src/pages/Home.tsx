@@ -20,11 +20,14 @@ export function Home() {
     <section className="p-6 lg:px-16">
       <Input
         type="text"
+        className="text-foreground"
         placeholder="Search countries..."
         value={search}
         onChange={handleSearch}
       />
-      <Card countries={filteredCountries} />
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <Card countries={filteredCountries} />
+      </div>
     </section>
   );
 }
