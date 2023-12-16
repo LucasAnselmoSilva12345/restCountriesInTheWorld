@@ -20,6 +20,7 @@ export function Home() {
     <section className="p-6 lg:px-16">
       <Input
         type="text"
+        className="text-foreground"
         placeholder="Search countries..."
         value={search}
         onChange={handleSearch}
