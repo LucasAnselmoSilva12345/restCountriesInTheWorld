@@ -11,13 +11,18 @@ describe('Header Component', () => {
     );
   });
 
-  it('should render Header component with title of the app', () => {
-    const titleApp = screen.getByText(/Where in the world?/i);
-    expect(titleApp).toBeInTheDocument();
+  it('should render link with correct href attributes to navigate to the homepage', () => {
+    const titleAppLink = screen.getByRole('link', {
+      name: /Where in the world?/i,
+    });
+    expect(titleAppLink).toBeInTheDocument();
+    expect(titleAppLink.getAttribute('href')).toBe('/');
   });
 
-  it('should render link with correct href attributes', () => {
-    const filterRegionLink = screen.getByText('Filter by Region');
+  it('should render link with correct href attributes to navigate to the Filter By Region page', () => {
+    const filterRegionLink = screen.getByRole('link', {
+      name: 'Filter by Region',
+    });
     expect(filterRegionLink).toBeInTheDocument();
     expect(filterRegionLink.getAttribute('href')).toBe('/filter-by-region');
   });
