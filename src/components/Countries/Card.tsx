@@ -14,7 +14,7 @@ interface CardProps {
 
 export function Card({ countries }: CardProps) {
   return (
-    <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <>
       {countries.map((country, index) => (
         <div key={index} className="bg-card dark:bg-white border border-border">
           <img
@@ -42,6 +42,6 @@ export function Card({ countries }: CardProps) {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }

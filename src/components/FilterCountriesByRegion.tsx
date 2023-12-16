@@ -30,9 +30,13 @@ export function FilterCountriesByRegion({
       </select>
 
       {selectedRegion ? (
-        <Card countries={filteredCountries} />
+        <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <Card countries={filteredCountries} />
+        </div>
       ) : (
-        <p>No region searched</p>
+        <p className="text-destructive text-center opacity-80 mt-4">
+          No region searched
+        </p>
       )}
     </div>
   );

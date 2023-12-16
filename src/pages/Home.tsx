@@ -24,7 +24,9 @@ export function Home() {
         value={search}
         onChange={handleSearch}
       />
-      <Card countries={filteredCountries} />
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <Card countries={filteredCountries} />
+      </div>
     </section>
   );
 }

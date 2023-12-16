@@ -7,7 +7,7 @@ export function RoutesApp() {
   return (
     <BrowserRouter>
       <Header />
-      <main className="bg-background dark:bg-neutral-900">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/filter-by-region" element={<FilterCountries />} />
