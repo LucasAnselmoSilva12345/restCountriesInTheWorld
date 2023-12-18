@@ -1,4 +1,19 @@
-# Rest Countries In The World
+# Where in the World?
+
+## Objective
+
+The goal of this project is to showcase all countries worldwide through individual cards displaying their respective flag, name, capital, total population, and continent.
+
+## Website Features
+
+The website offers two primary options:
+
+1. Filter by Country Name: Allows users to search for countries by their names.
+2. Filter by Region: Enables users to filter countries based on their respective continents: Africa, America, Asia, Europe, and Oceania.
+
+### Test-Driven Development (TDD) Approach
+
+This website's development strictly adhered to the Test-Driven Development (TDD) methodology. Every function and feature within the website underwent rigorous testing to ensure its functionality and accuracy. Each aspect of the website was accompanied by a comprehensive test scenario, guaranteeing robustness and reliability.
 
 ### Building a project
 
